@@ -44,7 +44,7 @@ namespace SeleniumCSharp
             }
 
         }
-        public IList DataDrivenTesting()
+        static IList DataDrivenTesting()
         {
             ArrayList list = new ArrayList();
             list.Add("https://www.facebook.com/");
