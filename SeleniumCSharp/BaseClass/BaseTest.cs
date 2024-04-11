@@ -7,7 +7,7 @@ namespace SeleniumCSharp.BaseClass
 	public class BaseTest
 	{
 		public IWebDriver driver;
-        [OneTimeSetUp]
+        [SetUp] //[OneTimeSetup] to setup once and execute tests in unit test
 		public void Open()
 		{
             driver = new ChromeDriver();
@@ -15,7 +15,7 @@ namespace SeleniumCSharp.BaseClass
             driver.Url = "https://www.facebook.com";
         }
 
-		[OneTimeTearDown]
+		[TearDown] //[OneTimeTearDown]
 		public void Close()
 		{
             driver.Quit();

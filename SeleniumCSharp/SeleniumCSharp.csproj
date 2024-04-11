@@ -22,8 +22,16 @@
 
   <ItemGroup>
     <None Remove="BaseClass\" />
+    <None Remove="Pages\" />
+    <None Remove="Utility\" />
+    <None Remove="Properties\" />
+    <None Remove="PageObjectModelScript\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BaseClass\" />
+    <Folder Include="Pages\" />
+    <Folder Include="Utility\" />
+    <Folder Include="Properties\" />
+    <Folder Include="PageObjectModelScript\" />
   </ItemGroup>
 </Project>

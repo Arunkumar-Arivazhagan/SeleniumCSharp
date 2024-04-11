@@ -10,6 +10,7 @@ public class Tests : BaseTest
     {
         IWebElement emailTestField = driver.FindElement(By.XPath(".//*[@id='email']"));
         emailTestField.SendKeys("C#");
+        Thread.Sleep(2000);
         
     }
 }
